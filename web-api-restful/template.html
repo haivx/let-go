@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[GOLANG] Register successfully!</title>
+</head>
+<body>
+  <h2>Welcome {{ .title }} {{ .customer}}!</h2>
+
+  <p>Here is your information's account:
+    <ul>
+      {{range .info}}
+        <li><b>Username: </b>{{.Username}}</li>
+        <li><b>Password: </b>{{.Password}}</li>
+      {{end}}
+    </ul>    
+  </p>
+  <p>Please click <a href="#">here</a> to login to our website. Thank you!</p>
+</body>
+</html>
